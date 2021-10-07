@@ -6,8 +6,8 @@ with open("README.md", "r", encoding="utf-8") as fh:
     long_description = fh.read()
 
 setup(
-    name="bug-hot-spots",
-    version="0.1",
+    name="bughotspots",
+    version="0.3",
     packages=find_packages(),
     install_requires=dependencies,
     author="Punit Goswami",
@@ -24,7 +24,7 @@ setup(
 	]
     },
 
-    classifiers=['Development Status :: 1 - Alpha',
+    classifiers=['Development Status :: 3 - Alpha',
                 'Intended Audience :: Developers',
                 'Operating System :: Unix ']
 )
