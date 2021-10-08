@@ -8,7 +8,8 @@ A Python based implementation of the bug prediction algorithm proposed by Google
 Move to the repository directory  
 
 ```console
-    $ bughotspots .
+    $ cd app2
+    $ bughotspots   # scans the current repo
 
     Scanning ../app2 repo, branch:master
     Found 490 bugfix commits on the last 60 days
