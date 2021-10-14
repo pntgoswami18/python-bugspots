@@ -8,7 +8,7 @@ import re
 import csv
 
 description_regex = re.compile(
-    r"^.*([B|b]ug)s?|([f|F]ix(es|ed)?|[c|C]lose(s|d)?)|(([Q|q][F|f])-\d?).*$")
+    r"^.*(([Bb]ug)s?|[fF]ix(es|ed)?|[cC]lose(s|d)?).*$")
 
 markdown_output = str(
     f'# Bughotspots Report\n### Generated at {datetime.datetime.now()}\n```console')
