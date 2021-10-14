@@ -196,10 +196,14 @@ def main():
     if options.markdown is None:
         global markdown_output
         markdown_output = None
-    for path in options.paths:
-        option = options
-        option.path = path
-        print_code_hotspots(option)
+    if options.paths is not None:
+        for path in options.paths:
+            option = options
+            option.path = path
+            print_code_hotspots(option)
+    else:
+        options.path=None
+        print_code_hotspots(options)
     if options.markdown is not None:
         write_to_markdown_file(options.markdown)
 
